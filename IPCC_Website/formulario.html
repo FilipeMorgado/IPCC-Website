@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <nav id="main-nav">
+
+        <ul>
+            <li>
+                <a href="home.html" class="columntop">Home</a>
+            </li>
+            <li>
+                <a href="#" class="columntop">Quem somos
+                    <span class="arrow">&#x25BC;</span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="historia.html">História</a>
+                    </li>
+                    <li>
+                        <a href="Que_fazemos.html">O Que fazemos</a>
+                    </li>
+                    <li>
+                        <a href="#">Working Group
+                            <span class="arrow">&#x25B6;</span>
+                        </a>
+                        <ul class="submenu-2">
+                            <li>
+                                <a href="working_1.html">Working Group I</a>
+                            </li>
+                            <li>
+                                <a href="working_2.html">Working Group II</a>
+                            </li>
+                            <li>
+                                <a href="working_3.html">Working Group III</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="columntop">Eventos
+                    <span class="arrow">&#x25BC;</span>
+                </a>
+
+                <ul class="submenu">
+                    <li>
+                        <a href="calendario.html">Calendário</a>
+                    </li>
+                    <li>
+                        <a href="atividades.html">Atividades</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="columntop">Recursos
+                    <span class="arrow">&#x25BC;</span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a target="_blank" href="http://www.ipcc.ie/about-us/donate-to-ipcc/">Doações</a>
+                    </li>
+
+                    <li>
+                        <a href="formulario.html">Formulário</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" id="columntop1" class="columntop">Área Cliente
+                    <span class="arrow">&#x25BC;</span>
+                </a>
+                <ul class="submenu">
+                    <li id="login">
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li id="registo">
+                        <a href="registo.html">Registo</a>
+                    </li>
+                    <li id="logout">
+                        <a href="home.html">Logout</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <form method="GET">
+        <div class="container">
+            <label><b>Nome:</b></label>
+            <input type="text" placeholder="Insira o Utilizador" id="nome" name="nome" required>
+           
+            <label><b>Sexo: </b><select name="sexo" id="sexo">
+
+                    <option selected="" value="Default">(Selecione o sexo)</option>
+                    <option value="mas">Masculino</option>
+                    <option value="fem">Feminino</option>
+                </select></label>
+            <br>
+            <br>
+            <label><b>Número de identificação:</b></label>
+            <input type="text" placeholder="Insira o número de identificação"  id="numero_identificacao" name="numero_identificacao" required>
+            <label><b>Idade:</b></label>
+            <input type="text" placeholder="Insira a idade" id="idade" name="idade" required>
+            <label><b>Email:</b></label>
+            <input type="text" placeholder="Insira o Email" name="email" id="email" required>
+            <label><b>Morada:</b></label>
+            <input type="text" placeholder="Insira a morada" id="morada" name = "morada"required>
+            <label id ="motivo1" for="motivo">Motivo de contacto: </label>
+            <textarea id="motivo" placeholder="Insira o motivo de contacto" name="motivo" required="required"></textarea>
+            <button id="btnreg" type="submit" onclick="funcionar()">Enviar Formulário</button>
+
+        </div>
+    </form>
+    <script type="text/javascript" src="js/formulario1.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+</body>
+
+</html>

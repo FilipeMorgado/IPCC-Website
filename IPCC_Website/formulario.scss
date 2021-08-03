@@ -1,0 +1,131 @@
+$back-color : #1571ad;
+$letras: white;
+$hover-color: #0995f1;
+$f_display: flex;
+$b_display: block;
+$n_display: none;
+$ib_display:inline-block;
+$alinhar_centro:center;
+$p_relativa: relative;
+$p_absoluta:absolute;
+$negrito: bold;
+$f_direcao:column;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  #main-nav a {
+    background-color:$back-color; 
+    background-repeat: no-repeat; 
+    color: $letras;
+    height: 45px;
+    font-family: lato;
+    font-weight: $negrito;
+    display: $f_display;
+    align-items: $alinhar_centro;
+    justify-content: $alinhar_centro;
+    text-decoration: $n_display;
+    transition: background 0.4s;
+    
+  }
+  
+  #main-nav a:hover {
+    background: $hover-color;
+  }
+  
+  
+  
+  #main-nav ul {
+    list-style: $n_display;
+    display: $f_display;
+  }
+  
+  #main-nav li {
+    width: 100%;
+    text-align: $alinhar_centro;
+    position: $p_relativa;
+  }
+  
+  #main-nav li:hover .submenu > li {
+    display: $b_display;
+    flex-direction: $f_direcao;
+    top: 0px;
+  }
+  
+  .submenu li {
+    display: $n_display;
+    position: $p_absoluta;
+    top: 0px;
+  }
+  
+  .submenu {
+    display: $f_display;
+    flex-direction: $f_direcao;
+    position: $p_absoluta;
+    width: 100%;
+  }
+  
+  .submenu li {
+    position: $p_relativa;
+  }
+  
+  .submenu li:hover .submenu-2 li {
+    display: $b_display;
+  }
+  
+  .submenu-2 li {
+    display: $n_display;
+  }
+  .submenu-2 {
+    display: $f_display;
+    flex-direction: $f_direcao;
+    position: $p_absoluta;
+    top: 0px;
+    left: 100%;
+    width: 120px;
+  }
+  
+  .arrow {
+    margin-left: 6px;
+    color:$letras;
+    font-size: 8px;
+  }
+
+  /******************/
+  input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: $ib_display;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: $letras;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  textarea,#motivo{
+    width: 100%;
+    padding: 5px;
+  }
+  
+  #motivo1{
+    font-weight: $negrito;
+  }

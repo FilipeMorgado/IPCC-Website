@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="css/login.css">
+  <title>Login</title>
+</head>
+
+<body>
+
+  <h1>Login</h1>
+
+  <form method="POST">
+    <div class="imgcontainer">
+      <img src="Imagens/avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Utilizador</b></label>
+      <input type="text" placeholder="Insira o Utilizador" name="nome" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Insira a Password" name="pass" required>
+
+
+      <button type="submit" onclick="validar(this.form)">Login</button>
+    </div>
+
+    <div class="container" style="background-color: white">
+      <button type="button" class="cancelbtn"><a href="home.html">Cancelar</a></button>
+      <span class="psw">Esqueceu-se da <a href="">password?</a></span>
+    </div>
+  </form>
+  <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>

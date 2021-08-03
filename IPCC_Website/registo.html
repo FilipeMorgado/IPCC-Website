@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="css/login.css">
+  <title>Registo</title>
+</head>
+<body>
+
+  <h1>Registo</h1>
+
+  <form method="GET">
+    <div class="imgcontainer">
+      <img src="Imagens/avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Utilizador</b></label>
+      <input type="text" placeholder="Insira o Utilizador" id="nome" name="nome" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Insira a Password" id="pass" name="pass" required>
+
+      <label><b>Repita a Password</b></label>
+      <input type="password" placeholder="Insira de novo a Password" id="rpass" name="rpass" required>
+
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Insira o Email" name="email" id="email" required>
+
+      <label><b>Sexo: </b><select name="sexo" id="sexo">
+
+          <option selected="" value="Default">(Selecione o sexo)</option>
+          <option value="mas">Masculino</option>
+          <option value="fem">Feminino</option>
+        </select></label>
+      <br>
+      <br>
+      <b>Ao criar uma conta nova concorda com os nossos<a href="#"> Termos de serviço.</a> </b>
+      <button id="btnreg" type="submit" onclick="formValidation()">Registar !</button>
+    </div>
+
+    <div class="container" style="background-color: white">
+      <button type="button" class="cancelbtn"><a href="home.html">Cancelar</a></button>
+    </div>
+  </form>
+  <script type="text/javascript" src="js/registo.js"></script>
+</body>
+
+</html>

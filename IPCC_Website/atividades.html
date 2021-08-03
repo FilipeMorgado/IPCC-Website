@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/atividades.css">
+    <title>Atividades</title>
+</head>
+
+<body>
+    <nav id="main-nav">
+
+        <ul>
+            <li>
+                <a href="home.html" class="columntop">Home</a>
+            </li>
+            <li>
+                <a href="#" class="columntop">Quem somos
+                    <span class="arrow">&#x25BC;</span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="historia.html">História</a>
+                    </li>
+                    <li>
+                        <a href="Que_fazemos.html">O Que fazemos</a>
+                    </li>
+                    <li>
+                        <a href="#">Working Group
+                            <span class="arrow">&#x25B6;</span>
+                        </a>
+                        <ul class="submenu-2">
+                            <li>
+                                <a href="working_1.html">Working Group I</a>
+                            </li>
+                            <li>
+                                <a href="working_2.html">Working Group II</a>
+                            </li>
+                            <li>
+                                <a href="working_3.html">Working Group III</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="columntop">Eventos
+                    <span class="arrow">&#x25BC;</span>
+                </a>
+
+                <ul class="submenu">
+                    <li>
+                        <a href="calendario.html">Calendário</a>
+                    </li>
+                    <li>
+                        <a href="atividades.html">Atividades</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="columntop">Recursos
+                    <span class="arrow">&#x25BC;</span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a target="_blank" href="http://www.ipcc.ie/about-us/donate-to-ipcc/">Doações</a>
+                    </li>
+                    <li>
+                        <a href="formulario.html">Formulário</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" id="columntop1" class="columntop">Área Cliente
+                    <span class="arrow">&#x25BC;</span>
+                </a>
+                <ul class="submenu">
+                    <li id="login">
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li id="registo">
+                        <a href="registo.html">Registo</a>
+                    </li>
+                    <li id="logout">
+                        <a href="home.html">Logout</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="conteudo">
+        <h1>Atividades do IPCC</h1>
+        <h2>Reportagem em conjunto com o National Geographic</h2>
+        <h4>A temperatura média da Terra está subindo quase o dobro da taxa de 50 anos atrás. Essa tendência de
+            aquecimento rápido não pode ser explicada apenas pelos ciclos naturais, concluíram os cientistas. A única
+            maneira de explicar o padrão é incluir o efeito dos gases de efeito estufa (GEE) emitidos pelos seres
+            humanos.
+
+            Os níveis atuais dos gases de efeito estufa, dióxido de carbono, metano e óxido nitroso em nossa atmosfera
+            são mais altos do que em qualquer ponto dos últimos 800.000 anos, e sua capacidade de reter o calor está
+            mudando nosso clima de várias maneiras.
+        </h4>
+        <h3>Leia a conclusão do IPPC <a
+                href="https://www.nationalgeographic.com/environment/global-warming/global-warming-causes/"
+                style="color:grey"">aqui.</a></h3>
+            <h3>Saiba mais sobre as atividades do IPCC <a href=" https://www.ipcc.ch/activities/" style="color:grey"">aqui.</a></h3>
+    <div>
+        <video width=" 100%" height="500px" onloadstart="this.volume=0.2" controls autoplay>
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.mp4" type="video/ogg">
+                <h1>Your browser does not support this video.</h1>
+                </video>
+    </div>
+    <div id="row2" class="row">
+        <div id="doar">
+            <h1>Ajude-nos a ajudar ! Todas as doações são bem vindas ! </h1>
+
+            <input type="submit" value="Doar " id="btndoar"
+                onclick="location.href='http://www.ipcc.ie/about-us/donate-to-ipcc/'" />
+        </div>
+    </div>
+    <footer>
+
+        <div id="contactos">
+            <ul>
+                <li><a href="https://www.instagram.com/IPCC/" target="_blank"><img id="instagram" alt="instagram"
+                            src="Imagens/instagram_logo.png">Instagram</a></li>
+                <li><a href="https://www.youtube.com/IPCCGeneva" target="_blank"><img id="youtube" alt="youtube"
+                            src="Imagens/youtube_logo.png">YouTube</a></li>
+                <li><a href="https://www.linkedin.com/company/ipcc/" target="_blank"><img id="linkedin" alt="linkedin"
+                            src="Imagens/linkedin_logo.png">LinkdIn</a></li>
+                <li><a href="https://www.facebook.com/IPCC" target="_blank"><img id="facebook" alt="facebook"
+                            src="Imagens/facebook_logo.png">Facebook</a></li>
+                <li><a href="https://twitter.com/IPCC_ch" target="_blank"><img id="twitter" alt="twitter"
+                            src="Imagens/twitter_logo.png">Twitter</a></li>
+            </ul>
+
+        </div>
+        <div id="formularios">
+
+            <form method="GET" >
+
+                <h2>Deixe-nos uma mensagem !</h2>
+
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Ex: João Alves" required="required" />
+
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" id="email" placeholder="Ex: email@example.com" required="required" />
+
+                <label for="msg">Mensagem: </label>
+                <textarea id="msg" placeholder="Ex: Exemplo de mensagem" name="mensagem" form="form"
+                    required="required"></textarea>
+
+                <input type="submit" value="Enviar" id="btnenviar" onclick="formValidation()">
+            </form>
+            <script type="text/javascript" src="js/formulario.js"></script>
+
+
+
+        </div>
+        <div class="office">
+            <div class="texto_local">
+                <h3>Localização: </h3>
+                <p><img id="adress" alt="adress" src="Imagens/location.png">Avenue de la Paix 7BIS, 1202 Genève,
+                    Suíça.</p>
+
+                </p>
+            </div>
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.3570985557476!2d6.144080015583007!3d46.22324287911722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c651d90aca2d5%3A0xded4dbedb7d5d19d!2sIntergovernmental%20Panel%20on%20Climate%20Change%20(IPCC)!5e0!3m2!1spt-PT!2spt!4v1577129613745!5m2!1spt-PT!2spt"
+                    frameborder="0" marginwidth="0" marginheight="0" hspace="0" vspace="0" scrolling="no"></iframe>
+            </div>
+
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/home.js"></script>
+
+
+</body>
+
+</html>
